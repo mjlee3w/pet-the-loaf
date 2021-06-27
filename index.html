@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/0b7aeb9e-1c75-4ef3-b7bf-79a886226dee%2FIMG_1718.PNG?v=1624652331964"
+    />
+
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <title>Pet the Loaf!</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta
+      name="description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Pet the Loaf!" />
+    <meta property="og:type" content="web game" />
+    <meta property="og:url" content="https://pet-the-loaf.glitch.me/" />
+    <meta property="og:description" content="A simple cat petting game" />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/0b7aeb9e-1c75-4ef3-b7bf-79a886226dee%2FUntitled_Artwork%20-%202021-06-25T131141.133.png?v=1624644711024"
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!--
+      This is the body of the page
+      Look at the elements and see how they appear in the rendered page on the right
+      Each element is defined using tags, with < and > indicating where each one opens and closes
+      There are elements for sections of the page, images, text, and more
+      The elements include attributes referenced in the CSS for the page style
+    -->
+
+    <!-- The wrapper and content divs set margins and positioning -->
+    <div class="wrapper">
+      <div class="content" role="main">
+        <!-- This is the start of content for our page -->
+        <div class="title">
+          <span class="smiley-1">☻</span> <span style="color:#f55639;">P</span
+          ><span style="color:#f79871;">e</span
+          ><span style="color:#789bff;">t</span>
+          <span style="color:#f99fff;">t</span
+          ><span style="color:#f55639;">h</span
+          ><span style="color:#f79871;">e</span>
+          <span style="color:#789bff;">g</span
+          ><span style="color:#f99fff;">o</span
+          ><span style="color:#f55639;">o</span
+          ><span style="color:#f79871;">d</span>
+          <span style="color:#789bff;">l</span
+          ><span style="color:#f99fff;">o</span
+          ><span style="color:#fc5a34;">a</span
+          ><span style="color:#ef9b75;">f</span> <span class="smiley-2">☻</span>
+        </div>
+
+        <!-- Instructions on using this project -->
+        <div class="instructions">
+          <h2>
+            pet (click or spacebar) the cat loaf as much as you can in ten
+            seconds
+          </h2>
+          <!-- ADD BUTTON HERE -->
+
+          <!-- Once you've added the button from the readme, click it in the page -->
+          <!-- Check out the function in script.js to see how it works -->
+        </div>
+        <br />
+        <br />
+        <div class="box">
+          <div id="pic-rows">
+            <img
+              src="https://cdn.glitch.com/0b7aeb9e-1c75-4ef3-b7bf-79a886226dee%2FUntitled_Artwork%20-%202021-06-24T182416.338.png?v=1624577083494"
+              width="330"
+              id="pic-change"
+              onclick="changeImage()"
+            />
+          </div>
+          <button type="button" onclick="buttonClick()" id="start-button">
+            start
+          </button>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="title-2">
+          <span style="color:#f79871;">t</span
+          ><span style="color:#789bff;">i</span
+          ><span style="color:#f99fff;">m</span
+          ><span style="color:#f55639;">e</span
+          ><span style="color:#f79871;">r</span
+          ><span style="color:#789bff;">: </span><span id="timer">10s</span
+          ><br />
+        </div>
+        <div class="title-2">
+          <span style="color:#f99fff;">p</span
+          ><span style="color:#f55639;">e</span
+          ><span style="color:#f79871;">t</span
+          ><span style="color:#789bff;">s</span
+          ><span style="color:#f99fff;">: </span><span id="score">0</span><br />
+        </div>
+        <br />
+        <div id="div-wrapper">
+          <div style="padding-right:10px; float:left" class="msg">
+            <h2 id="end-message"></h2>
+          </div>
+          <div style="float:left" class="msg">
+            <img
+              src="https://cdn.glitch.com/0b7aeb9e-1c75-4ef3-b7bf-79a886226dee%2FUntitled_Artwork%20-%202021-06-25T145730.069.png?v=1624651057264"
+              width="50"
+              id="msg-pic"
+            />
+          </div>
+        </div>
+      </div>
+      <a href="https://glitch.com/@mjlee3w" class="credit"
+        >made by mjlee3w (ﾉ´ヮ´)ﾉ*: ･ﾟ𓇼</a
+      >
+    </div>
+  </body>
+</html>
