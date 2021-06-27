@@ -1,0 +1,165 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  See if you can cross-reference the rules in this file with the elements in index.html
+*/
+
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #f8f8ff;
+  --color-text-main: #000000;
+  --color-primary: #FFFF00;
+  --wrapper-height: 57vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+.divider {
+  padding: 0 1rem;
+}
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+
+body {
+  font-family: "PT Mono", monospace;
+  background-color: var(--color-bg);
+}
+
+/* Start https://www.cursors-4u.com */
+* {
+  cursor: url(
+      https://cur.cursors-4u.net/food/foo-2/foo103.cur
+    ),
+    auto;
+}
+/* End https://www.cursors-4u.com */
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Very light scaling for our illustration */
+.title {
+  font-family: "Shrikhand", cursive;
+  font-style: normal;
+  font-size: 85px;
+  margin: 0;
+}
+
+.title-2 {
+  font-family: "Shrikhand", cursive;
+  font-style: normal;
+  font-size: 45px;
+  margin: 0;
+}
+
+.smiley-1,
+.smiley-2 {
+  line-height: 100px;
+  font-size: 85px;
+}
+
+.smiley-1:hover,
+.smiley-2:hover {
+  font-size: 100px;
+  cursor: pointer;
+}
+
+/* Instructions */
+.instructions {
+  margin: 1rem auto 0;
+}
+
+#pic-change {
+  cursor: pointer;
+}
+
+/* Button - Add it from the README instructions */
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: bold;
+  background: #f8f8ff;
+  color: #f55639;
+  border: 3px solid #f55639;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+/* Subheading */
+h2 {
+  color: #8096ff;
+}
+
+.box {
+  box-shadow: 7px 5px #f99fff;
+  border: 2px solid #f99fff;
+  border-radius: 10px;
+  background-color: #aec0ff;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.credit {
+  size: 30px;
+  position: fixed;
+  bottom: 5px;
+  right: 50px;
+  font-weight: bold;
+  color: #f99fff;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .title,
+  .smiley-1,
+  .smiley-2 {
+    font-size: 55px;
+  }
+
+  .title,
+  .title-2,
+  h2,
+  .credit,
+  .msg {
+    text-align: center;
+  }
+
+  .msg-pic {
+    display: inline;
+  }
+}
